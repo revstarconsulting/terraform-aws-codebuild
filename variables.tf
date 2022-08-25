@@ -48,3 +48,13 @@ variable "vpc_config" {
 variable "buildspec_file" {
   type = string
 }
+
+variable "compute_type" {
+  type    = string
+  default = "BUILD_GENERAL1_MEDIUM"
+}
+
+variable "image" {
+  type    = string
+  default = "aws/codebuild/amazonlinux2-x86_64-standard:4.0"
+}
