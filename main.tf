@@ -18,8 +18,8 @@ resource "aws_codebuild_project" "this" {
   }
 
   environment {
-    compute_type    = "BUILD_GENERAL1_MEDIUM"
-    image           = "aws/codebuild/amazonlinux2-x86_64-standard:4.0"
+    compute_type    = var.compute_type
+    image           = var.image
     type            = "LINUX_CONTAINER"
     privileged_mode = true
 
