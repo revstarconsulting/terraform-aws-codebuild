@@ -73,3 +73,8 @@ variable "role_arn" {
   description = "cross account role for cloudfront cache invalidation"
   default     = ""
 }
+
+variable "concurrent_build_limit" {
+  type    = number
+  default = 1
+}
