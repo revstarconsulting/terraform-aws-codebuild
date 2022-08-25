@@ -67,3 +67,8 @@ variable "s3_build_logs_bucket" {
 variable "app_name" {
   type = string
 }
+
+variable "role_arn" {
+  type        = string
+  description = "cross account role for cloudfront cache invalidation"
+}
