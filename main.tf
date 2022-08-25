@@ -4,6 +4,7 @@ locals {
     REGION          = var.region
     NODE_ENV        = var.environment
     DISTRIBUTION_ID = var.cloudfront_distribution_id
+    ROLE_ARN        = var.role_arn
 
   })
 }
