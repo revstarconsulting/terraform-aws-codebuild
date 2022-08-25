@@ -58,3 +58,12 @@ variable "image" {
   type    = string
   default = "aws/codebuild/amazonlinux2-x86_64-standard:4.0"
 }
+
+variable "s3_build_logs_bucket" {
+  type        = string
+  description = "s3 bucket to store build logs"
+}
+
+variable "app_name" {
+  type = string
+}
