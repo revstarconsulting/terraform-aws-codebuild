@@ -10,9 +10,10 @@ locals {
 }
 
 resource "aws_codebuild_project" "this" {
-  name          = "${var.project_name}-codebuild-${var.pipeline_type}-${var.environment}"
-  build_timeout = "10"
-  service_role  = var.cicd_role
+  name                   = "${var.project_name}-codebuild-${var.pipeline_type}-${var.environment}"
+  build_timeout          = "10"
+  service_role           = var.cicd_role
+  concurrent_build_limit = 5
 
   artifacts {
     type = "CODEPIPELINE"
