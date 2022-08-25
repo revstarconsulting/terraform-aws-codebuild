@@ -44,7 +44,7 @@ resource "aws_codebuild_project" "this" {
 
     s3_logs {
       status   = "ENABLED"
-      location = "${var.s3_build_logs_bucket}/${var.environment}/${var.app_name}-build-logß"
+      location = "${var.s3_build_logs_bucket}/${var.environment}/${var.app_name}-build-log"
     }
   }
   dynamic "vpc_config" {
