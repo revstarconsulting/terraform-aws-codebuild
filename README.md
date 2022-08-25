@@ -25,6 +25,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_app_name"></a> [app\_name](#input\_app\_name) | n/a | `string` | n/a | yes |
 | <a name="input_build_environment_variables"></a> [build\_environment\_variables](#input\_build\_environment\_variables) | list of environment vars | `list(map(string))` | `[]` | no |
 | <a name="input_buildspec_file"></a> [buildspec\_file](#input\_buildspec\_file) | n/a | `string` | n/a | yes |
 | <a name="input_cicd_crossaccount_role"></a> [cicd\_crossaccount\_role](#input\_cicd\_crossaccount\_role) | for crossaccount deployments | `string` | `""` | no |
@@ -36,6 +37,7 @@ No modules.
 | <a name="input_pipeline_type"></a> [pipeline\_type](#input\_pipeline\_type) | pipeline type, e.g. lambda, frontend, etc. | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | n/a | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | aws region | `string` | n/a | yes |
+| <a name="input_s3_build_logs_bucket"></a> [s3\_build\_logs\_bucket](#input\_s3\_build\_logs\_bucket) | s3 bucket to store build logs | `string` | n/a | yes |
 | <a name="input_vpc_config"></a> [vpc\_config](#input\_vpc\_config) | vpc config | `any` | `{}` | no |
 
 ## Outputs

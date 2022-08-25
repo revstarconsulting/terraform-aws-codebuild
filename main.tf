@@ -35,6 +35,17 @@ resource "aws_codebuild_project" "this" {
 
   }
 
+  logs_config {
+    cloudwatch_logs {
+      group_name  = "${var.app_name}-log-group-${var.environment}"
+      stream_name = "${var.app_name}-log-stream-${var.environment}"
+    }
+
+    s3_logs {
+      status   = "ENABLED"
+      location = "${var.s3_build_logs_bucket}/${var.environment}/${var.app_name}-build-logß"
+    }
+  }
   dynamic "vpc_config" {
     for_each = var.vpc_config
 
@@ -49,7 +60,5 @@ resource "aws_codebuild_project" "this" {
     type      = "CODEPIPELINE"
     buildspec = local.buildspec_template
   }
-  # lifecycle {
-  #     ignore_changes = all
-  # }
+
 }
