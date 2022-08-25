@@ -71,4 +71,5 @@ variable "app_name" {
 variable "role_arn" {
   type        = string
   description = "cross account role for cloudfront cache invalidation"
+  default     = ""
 }

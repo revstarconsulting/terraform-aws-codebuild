@@ -37,7 +37,7 @@ No modules.
 | <a name="input_pipeline_type"></a> [pipeline\_type](#input\_pipeline\_type) | pipeline type, e.g. lambda, frontend, etc. | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | n/a | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | aws region | `string` | n/a | yes |
-| <a name="input_role_arn"></a> [role\_arn](#input\_role\_arn) | cross account role for cloudfront cache invalidation | `string` | n/a | yes |
+| <a name="input_role_arn"></a> [role\_arn](#input\_role\_arn) | cross account role for cloudfront cache invalidation | `string` | `""` | no |
 | <a name="input_s3_build_logs_bucket"></a> [s3\_build\_logs\_bucket](#input\_s3\_build\_logs\_bucket) | s3 bucket to store build logs | `string` | n/a | yes |
 | <a name="input_vpc_config"></a> [vpc\_config](#input\_vpc\_config) | vpc config | `any` | `{}` | no |
 
