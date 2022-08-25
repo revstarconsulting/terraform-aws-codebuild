@@ -76,5 +76,5 @@ variable "role_arn" {
 
 variable "concurrent_build_limit" {
   type    = number
-  default = 1
+  default = null
 }
