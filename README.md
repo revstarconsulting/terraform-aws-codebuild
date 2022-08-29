@@ -32,7 +32,6 @@ No modules.
 | <a name="input_cicd_role"></a> [cicd\_role](#input\_cicd\_role) | cicd role | `string` | n/a | yes |
 | <a name="input_cloudfront_distribution_id"></a> [cloudfront\_distribution\_id](#input\_cloudfront\_distribution\_id) | n/a | `string` | `""` | no |
 | <a name="input_compute_type"></a> [compute\_type](#input\_compute\_type) | n/a | `string` | `"BUILD_GENERAL1_MEDIUM"` | no |
-| <a name="input_concurrent_build_limit"></a> [concurrent\_build\_limit](#input\_concurrent\_build\_limit) | n/a | `number` | `null` | no |
 | <a name="input_environment"></a> [environment](#input\_environment) | aws environment | `string` | n/a | yes |
 | <a name="input_image"></a> [image](#input\_image) | n/a | `string` | `"aws/codebuild/amazonlinux2-x86_64-standard:4.0"` | no |
 | <a name="input_pipeline_type"></a> [pipeline\_type](#input\_pipeline\_type) | pipeline type, e.g. lambda, frontend, etc. | `string` | n/a | yes |
